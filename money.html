@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo de Educação Financeira 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00cc88;
+            --secondary: #00a8ff;
+            --dark: #121212;
+            --medium: #1e1e1e;
+            --light: #f5f5f5;
+            --accent: #7b2cbf;
+            --warning: #ff9e00;
+            --success: #28a745;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--medium) 0%, #151515 100%);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+            position: relative;
+        }
+        
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: var(--primary);
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 204, 136, 0.3);
+        }
+        
+        .tagline {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+        
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            background: var(--medium);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid rgba(0, 204, 136, 0.3);
+            padding-bottom: 0.5rem;
+        }
+        
+        h2 i {
+            font-size: 1.5rem;
+        }
+        
+        h3 {
+            color: var(--secondary);
+            font-size: 1.4rem;
+            margin-top: 2rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: "•";
+            color: var(--secondary);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        ol {
+            counter-reset: list-item;
+        }
+        
+        ol li {
+            counter-increment: list-item;
+        }
+        
+        ol li::before {
+            content: counter(list-item) ".";
+            color: var(--secondary);
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            margin-left: -1.5em;
+        }
+        
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        a:hover {
+            color: var(--primary);
+        }
+        
+        a::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s ease;
+        }
+        
+        a:hover::after {
+            width: 100%;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            border-left: 3px solid var(--primary);
+        }
+        
+        .card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .card i {
+            font-size: 1.2rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .comparison-table th, 
+        .comparison-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            vertical-align: top;
+        }
+        
+        .comparison-table th {
+            background: rgba(0, 204, 136, 0.2);
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .comparison-table tr:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+        
+        .warning-box {
+            background: rgba(255, 158, 0, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--warning);
+            margin: 2rem 0;
+        }
+        
+        .warning-box h3 {
+            color: var(--warning);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .success-box {
+            background: rgba(40, 167, 69, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--success);
+            margin: 2rem 0;
+        }
+        
+        .success-box h3 {
+            color: var(--success);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .testimonial {
+            font-style: italic;
+            background: rgba(0, 204, 136, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            margin: 2rem 0;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            text-align: right;
+            color: var(--secondary);
+            margin-top: 1rem;
+        }
+        
+        .summary {
+            background: rgba(0, 168, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+            margin: 2rem 0;
+        }
+        
+        .summary h3 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #151515 0%, var(--medium) 100%);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-top: 4px solid var(--primary);
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-content p {
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                min-width: 120px;
+            }
+        }
+        
+        /* Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        section {
+            animation: fadeIn 0.6s ease forwards;
+        }
+        
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+        section:nth-child(6) { animation-delay: 0.5s; }
+        section:nth-child(7) { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><i class="fas fa-chart-line"></i> Guia financeiro pra passar por cima de todos</h1>
+            <p class="tagline">O guia trás tudo do mais completo possível</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="fundamentos">
+            <h2><i class="fas fa-building-columns"></i> Fundamentos Financeiros</h2>
+            
+            <h3>1. Orçamento Pessoal (Regra 50/30/20)</h3>
+            <ul>
+                <li><strong>50% Necessidades:</strong> Aluguel, contas, alimentação, transporte</li>
+                <li><strong>30% Desejos:</strong> Lazer, viagens, hobbies, entretenimento</li>
+                <li><strong>20% Poupança/Investimentos:</strong> Reserva de emergência e construção de patrimônio</li>
+            </ul>
+            
+            <div class="success-box">
+                <h3><i class="fas fa-lightbulb"></i> Dica Prática</h3>
+                <p>Use aplicativos como <strong>Mobills</strong>, <strong>YNAB</strong> ou <strong>Organizze</strong> para controlar seus gastos automaticamente e visualizar seu progresso financeiro.</p>
+            </div>
+            
+            <h3>2. Reserva de Emergência</h3>
+            <p>Sua primeira prioridade financeira deve ser construir uma reserva de segurança:</p>
+            <ul>
+                <li><strong>Quanto:</strong> 6 a 12 meses de despesas essenciais</li>
+                <li><strong>Onde guardar:</strong> Tesouro Selic, CDB 100% DI, conta remunerada como Nubank ou PicPay</li>
+                <li><strong>Quando usar:</strong> Apenas para emergências reais (desemprego, saúde, reparos urgentes)</li>
+            </ul>
+            
+            <h3>3. Eliminação de Dívidas</h3>
+            <p>Dívidas com juros altos são o maior inimigo da sua saúde financeira:</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Método</th>
+                        <th>Como Funciona</th>
+                        <th>Melhor Para</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Avalanche</strong></td>
+                        <td>Pagar primeiro a dívida com maior taxa de juros</td>
+                        <td>Quem quer economizar mais em juros</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bola de Neve</strong></td>
+                        <td>Pagar primeiro a menor dívida para motivação</td>
+                        <td>Quem precisa de estímulo psicológico</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Consolidação</strong></td>
+                        <td>Juntar várias dívidas em uma com juros menores</td>
+                        <td>Quem tem muitas dívidas pequenas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="tecnicas-ganhar-dinheiro">
+            <h2><i class="fas fa-money-bill-wave"></i> Técnicas Comprovadas para Ganhar Dinheiro</h2>
+            
+            <h3>1. Renda Ativa vs. Renda Passiva</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Exemplos</th>
+                        <th>Vantagens</th>
+                        <th>Desvantagens</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Renda Ativa</strong></td>
+                        <td>Salário, freelancer, Uber, consultoria</td>
+                        <td>Dinheiro imediato, previsível</td>
+                        <td>Tempo limitado, troca tempo por dinheiro</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Renda Passiva</strong></td>
+                        <td>Dividendos, aluguéis, royalties, afiliados</td>
+                        <td>Liberdade geográfica, escalável</td>
+                        <td>Exige capital inicial ou criação de ativos</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>2. Side Hustles (Fontes de Renda Extra)</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h3><i class="fas fa-laptop-code"></i> Freelancing</h3>
+                    <p>Design gráfico, programação, redação, tradução (plataformas: Workana, 99freelas, Upwork)</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-store"></i> Dropshipping</h3>
+                    <p>Vender produtos sem estoque usando Shopify e AliExpress</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-link"></i> Marketing de Afiliados</h3>
+                    <p>Promover produtos da Amazon, Hotmart, Monetizze e ganhar comissões</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-video"></i> Criação de Conteúdo</h3>
+                    <p>YouTube, TikTok, blog monetizado com ads e patrocínios</p>
+                </div>
+            </div>
+            
+            <h3>3. Método FIRE (Independência Financeira Antes dos 40)</h3>
+            <p>O movimento FIRE (Financial Independence, Retire Early) propõe:</p>
+            <ul>
+                <li><strong>Economizar 50-70% da renda</strong> (viver abaixo das possibilidades)</li>
+                <li><strong>Investir em ativos geradores de renda passiva</strong> (FIIs, dividendos, imóveis)</li>
+                <li><strong>Alcançar 25x suas despesas anuais</strong> para se aposentar (Regra dos 4%)</li>
+            </ul>
+            
+            <div class="testimonial">
+                <p>"A independência financeira não é sobre ser rico, mas sobre ter controle sobre seu tempo e escolhas."</p>
+                <p class="testimonial-author">— Mr. Money Mustache, pioneiro do movimento FIRE</p>
+            </div>
+        </section>
+        
+        <section id="psicologia-financeira">
+            <h2><i class="fas fa-brain"></i> Psicologia do Dinheiro e Mentalidade de Riqueza</h2>
+            
+            <h3>1. Mindset de Crescimento vs. Mindset Fixo</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Mindset de Riqueza</th>
+                        <th>Mindset de Pobreza</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Visão do Dinheiro</strong></td>
+                        <td>Ferramenta para criar liberdade</td>
+                        <td>Recurso escasso para sobreviver</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fracasso</strong></td>
+                        <td>Oportunidade de aprendizado</td>
+                        <td>Razão para desistir</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Investimentos</strong></td>
+                        <td>Foco no longo prazo</td>
+                        <td>Busca por ganhos rápidos</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>2. Viés Cognitivos que Atrapalham</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h3><i class="fas fa-users"></i> Efeito Manada</h3>
+                    <p>Seguir a maioria (ex.: comprar Bitcoin na alta por FOMO)</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-anchor"></i> Ancoragem</h3>
+                    <p>Prender-se a referências irrelevantes (ex.: "Comprei a R$100, não vendo por menos")</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-heart-broken"></i> Aversão à Perda</h3>
+                    <p>Medo de perder é maior que vontade de ganhar (ex.: vender ações na queda)</p>
+                </div>
+            </div>
+            
+            <h3>3. Hábitos dos Milionários</h3>
+            <ul>
+                <li><strong>Leitura diária:</strong> 85% dos milionários leem 2+ livros por mês (finanças, negócios, desenvolvimento pessoal)</li>
+                <li><strong>Rede de contatos:</strong> Cultivam relacionamentos com pessoas de mentalidade similar</li>
+                <li><strong>Metas escritas:</strong> 70% dos ricos revisam e atualizam metas regularmente</li>
+                <li><strong>Exercícios físicos:</strong> Corpo saudável melhora tomada de decisões</li>
+            </ul>
+            
+            <div class="warning-box">
+                <h3><i class="fas fa-exclamation-triangle"></i> Cuidado com Atalhos</h3>
+                <p>Riqueza verdadeira raramente vem de esquemas "fique rico rápido". Desconfie de promessas irrealistas e foque em construção de valor a longo prazo.</p>
+            </div>
+        </section>
+        
+        <section id="investimentos">
+            <h2><i class="fas fa-chart-line"></i> Investimentos Inteligentes em 2025</h2>
+            
+            <h3>1. Melhores Investimentos em 2025</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Investimento</th>
+                        <th>Risco</th>
+                        <th>Retorno Esperado</th>
+                        <th>Liquidez</th>
+                        <th>Mínimo</th>
+                        <th>Tendência 2025</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Tesouro Direto+</strong></td>
+                        <td>Baixo</td>
+                        <td>7-13% a.a.</td>
+                        <td>Alta</td>
+                        <td>R$ 30,00</td>
+                        <td>Novos títulos com proteção cambial</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ações (BDRs, ETFs)</strong></td>
+                        <td>Médio</td>
+                        <td>12-35% a.a.</td>
+                        <td>Alta</td>
+                        <td>R$ 100,00</td>
+                        <td>Foco em tecnologia verde e IA</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fundos Imobiliários (FIIs)</strong></td>
+                        <td>Médio</td>
+                        <td>9-18% a.a.</td>
+                        <td>Média</td>
+                        <td>R$ 100,00</td>
+                        <td>CRIs de energias renováveis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Criptomoedas (BTC, ETH)</strong></td>
+                        <td>Alto</td>
+                        <td>+80% a.a. (volátil)</td>
+                        <td>Alta</td>
+                        <td>R$ 50,00</td>
+                        <td>Tokenização de ativos reais</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Startups via Equity Crowdfunding</strong></td>
+                        <td>Alto</td>
+                        <td>20-100% a.a.</td>
+                        <td>Baixa</td>
+                        <td>R$ 500,00</td>
+                        <td>Setor de biotecnologia em alta</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="success-box">
+                <h3><i class="fas fa-chart-line"></i> Tendências de Mercado 2025</h3>
+                <p>Em 2025, os investimentos estão se concentrando em três grandes temas: <strong>tecnologia sustentável</strong>, <strong>tokenização de ativos</strong> e <strong>soluções financeiras descentralizadas</strong>. A diversificação entre essas áreas pode oferecer boas oportunidades.</p>
+            </div>
+            
+            <h3>2. Estratégias de Investimento</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h3><i class="fas fa-chess-pawn"></i> Buy and Hold</h3>
+                    <p>Comprar e segurar bons ativos por anos ("Time in the market beats timing the market")</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-search-dollar"></i> Value Investing</h3>
+                    <p>Warren Buffett - comprar ações de empresas subvalorizadas com fundamentos sólidos</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-chart-pie"></i> Diversificação</h3>
+                    <p>"Não coloque todos os ovos na mesma cesta" - alocar em diferentes classes de ativos</p>
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <h3><i class="fas fa-skull-crossbones"></i> Day Trade - Cuidado!</h3>
+                <p>Estudos mostram que 90% dos day traders perdem dinheiro. Exige conhecimento avançado, controle emocional e dedicação integral. Não é "dinheiro fácil".</p>
+            </div>
+            
+            <h3>3. Como Começar a Investir com Pouco Dinheiro</h3>
+            <ol>
+                <li><strong>Abra conta em uma corretora:</strong> Clear, Rico, XP (sem taxa para buy-and-hold)</li>
+                <li><strong>Comece com R$100-500/mês:</strong> Tesouro Selic ou ETFs como BOVA11</li>
+                <li><strong>Estude antes de investir:</strong> Cursos gratuitos da B3, ANBIMA</li>
+                <li><strong>Aumente gradativamente:</strong> Conforme ganha conhecimento e renda</li>
+            </ol>
+        </section>
+        
+        <section id="empreendedorismo">
+            <h2><i class="fas fa-rocket"></i> Empreendedorismo e Renda Extra</h2>
+            
+            <h3>1. Negócios Online com Baixo Custo</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h3><i class="fas fa-blog"></i> Blog + Afiliados</h3>
+                    <p>Crie conteúdo valioso e monetize com anúncios (AdSense) e links afiliados</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-shopping-cart"></i> E-commerce</h3>
+                    <p>Shopify, Mercado Livre ou loja própria com dropshipping</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-graduation-cap"></i> Cursos Online</h3>
+                    <p>Hotmart, Udemy ou própria plataforma com Teachable</p>
+                </div>
+            </div>
+            
+            <h3>2. Franchising e Negócios Físicos</h3>
+            <ul>
+                <li><strong>Franquias baratas:</strong> Sorvetes (R$50-100k), alimentação saudável</li>
+                <li><strong>Revenda de produtos digitais:</strong> E-books, PLR (Private Label Rights)</li>
+                <li><strong>Serviços especializados:</strong> Manutenção de ar-condicionado, limpeza a seco</li>
+            </ul>
+            
+            <div class="success-box">
+                <h3><i class="fas fa-check-circle"></i> Validação de Ideias</h3>
+                <p>Antes de investir tempo e dinheiro, valide sua ideia de negócio: converse com potenciais clientes, faça um MVP (produto mínimo viável) e teste em pequena escala.</p>
+            </div>
+        </section>
+        
+        <section id="livros-recomendados">
+            <h2><i class="fas fa-book-open"></i> Livros Essenciais para Transformação Financeira</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3><i class="fas fa-book"></i> Pai Rico, Pai Pobre</h3>
+                    <p><strong>Robert Kiyosaki</strong> - O clássico que desafia conceitos tradicionais sobre dinheiro. Ensina a diferença entre ativos e passivos, e como os ricos pensam diferente sobre finanças. Leitura obrigatória para quem quer mudar sua mentalidade financeira.</p>
+                    <p><strong>Impacto:</strong> Ajuda a entender como construir riqueza através de investimentos e negócios, não apenas de salários.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-chart-line"></i> O Investidor Inteligente</h3>
+                    <p><strong>Benjamin Graham</strong> - A bíblia do value investing, ensinando a analisar ações como um empresário. Warren Buffett diz que é o melhor livro sobre investimentos já escrito. Foca em segurança e análise fundamentalista.</p>
+                    <p><strong>Impacto:</strong> Desenvolve disciplina para evitar modismos e investir com margem de segurança.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-brain"></i> Os Segredos da Mente Milionária</h3>
+                    <p><strong>T. Harv Eker</strong> - Revela 17 "arquivos de riqueza" que diferenciam os ricos. Mostra como seu modelo mental atual pode estar sabotando seu sucesso financeiro sem você perceber.</p>
+                    <p><strong>Impacto:</strong> Identifica e reprograma crenças limitantes sobre dinheiro.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-piggy-bank"></i> Do Mil ao Milhão</h3>
+                    <p><strong>Thiago Nigro</strong> - Guia prático brasileiro sobre como pequenos investidores podem construir patrimônio. Aborda desde o primeiro investimento até estratégias avançadas.</p>
+                    <p><strong>Impacto:</strong> Mostra o caminho realista para acumular riqueza no contexto brasileiro.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-robot"></i> A Psicologia Financeira</h3>
+                    <p><strong>Morgan Housel</strong> - Explora como emoções e vieses afetam decisões financeiras. Histórias reais mostram que sucesso com dinheiro tem mais a ver com comportamento que com inteligência.</p>
+                    <p><strong>Impacto:</strong> Ajuda a tomar decisões mais racionais em momentos de crise ou euforia.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-fire"></i> Hábitos Atômicos</h3>
+                    <p><strong>James Clear</strong> - Não é um livro de finanças, mas essencial para quem quer construir riqueza. Mostra como pequenos hábitos diários levam a resultados extraordinários ao longo do tempo.</p>
+                    <p><strong>Impacto:</strong> Ensina a criar sistemas sustentáveis para acumulação de riqueza.</p>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <p>"Ler um bom livro financeiro é como ter uma conversa com alguém que já trilhou o caminho que você está começando. Cada livro é um ativo que se valoriza com o tempo através do conhecimento aplicado."</p>
+                <p class="testimonial-author">— Especialista em educação financeira</p>
+            </div>
+        </section>
+
+        <section id="recursos">
+            <h2><i class="fas fa-toolbox"></i> Ferramentas e Recursos Úteis</h2>
+            
+            <h3>1. Aplicativos Essenciais</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h3><i class="fas fa-wallet"></i> Controle Financeiro</h3>
+                    <p>Mobills, Organizze, YNAB (You Need A Budget)</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-chart-bar"></i> Investimentos</h3>
+                    <p>Gorila, Trademap, ProfitPro</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-coins"></i> Bancos Digitais</h3>
+                    <p>Nubank, PicPay, Inter - para investimentos iniciais</p>
+                </div>
+            </div>
+            
+            <h3>2. Cursos Gratuitos de Qualidade</h3>
+            <ul>
+                <li><strong>Finanças Pessoais:</strong> FGV Online, Tesouro Nacional</li>
+                <li><strong>Investimentos:</strong> B3 Educação, ANBIMA</li>
+                <li><strong>Empreendedorismo:</strong> Sebrae, Endeavor</li>
+            </ul>
+            
+            <div class="summary">
+                <h3><i class="fas fa-clipboard-check"></i> Checklist de Ação</h3>
+                <ol>
+                    <li>Analise suas finanças atuais (receitas, despesas, dívidas)</li>
+                    <li>Crie um orçamento usando a regra 50/30/20</li>
+                    <li>Comece a construir sua reserva de emergência</li>
+                    <li>Escolha uma fonte de renda extra para testar</li>
+                    <li>Abra conta em uma corretora e comece a investir (mesmo que com pouco)</li>
+                    <li>Leia pelo menos um livro financeiro por mês</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Educação Financeira </h3>
+            <p>O guia completo para sua independência financeira</p>
+            <p>© 2025 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
